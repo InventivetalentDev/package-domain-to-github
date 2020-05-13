@@ -1,6 +1,7 @@
 # Package-Domain to GitHub
 
-Simple script to redirect subdomains to corresponding GitHub repositories
+Simple script to redirect package subdomains to corresponding GitHub repositories.  
+Currently only works with Maven pom.xml artifacts
 
 
 ## Setup
