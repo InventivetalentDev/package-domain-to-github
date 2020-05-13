@@ -12,7 +12,7 @@ $headers = array(
     'Authorization: Basic ' . AUTH,
     'User-Agent: PackageDomainRedirect'
 );
-$ch = curl_init("https://api.github.com/search/code?q=user:" . USER . "+filename:pom.xml+" . $package);
+$ch = curl_init("https://api.github.com/search/code?q=user:" . USER . "+\"package+" . $package . "\"");
 curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
 curl_setopt($ch, CURLOPT_HTTPHEADER, $headers);
 $res = curl_exec($ch);
